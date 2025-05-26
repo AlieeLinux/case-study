@@ -22,7 +22,8 @@ for i in dfclean["Gender"]:
         M+=1
 
 
-X = dfclean[["Study Satisfaction" ,"Financial Stress", "Dietary Habits", "Age", "Sleep Duration", "suicidal thoughts", "Family History of Mental Illness" , "CGPA", "Academic Pressure"]]
+X = dfclean[["Study Satisfaction" ,"Financial Stress", "Dietary Habits", "Age", "Sleep Duration", 
+"suicidal thoughts", "Family History of Mental Illness" , "CGPA", "Academic Pressure"]]
 y = df["Depression"]
 
 
