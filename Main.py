@@ -1,3 +1,8 @@
+## Made By troy
+print("Made by troy. use this to base not to copy entirely and report it")
+
+
+
 from pandas import read_csv
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
