@@ -1,5 +1,5 @@
 ## Made By troy
-print("Made by troy. use this to base not to copy entirely and report it")
+print("Made by troy. use this as a base. so not copy and present it.")
 
 
 
