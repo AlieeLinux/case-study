@@ -6,12 +6,16 @@ import matplotlib.pyplot as plt
 
 df = read_csv("./student_depression_dataset.csv", index_col=0)
 
-dfclean = df.replace({"Male":0, "Female":1, "Others": -1, "Unhealthy": 0, "Moderate": 1, "Healthy": 2, "'More than 8 hours'": 9,"'5-6 hours'": 5.5, "'Less than 5 hours'": 4,"'7-8 hours'": 7.5, "?": 0, "Yes": 1, "No": 0, "Pass": 1, "Fail": 0}).infer_objects(copy=False)
+print(df.shape)
+
+dfclean = df.replace({"Male": 0, "Female":1, "Others": -1, "Unhealthy": 0,
+ "Moderate": 1, "Healthy": 2, "'More than 8 hours'": 9,"'5-6 hours'": 5.5,
+  "'Less than 5 hours'": 4,"'7-8 hours'": 7.5,
+   "?": 0, "Yes": 1, "No": 0, "Pass": 1, "Fail": 0}).infer_objects(copy=False)
 
 M=0
 F=0
 for i in dfclean["Gender"]:
-    print(i)
     if i == 1:
         F+=1
     elif i == 0:
